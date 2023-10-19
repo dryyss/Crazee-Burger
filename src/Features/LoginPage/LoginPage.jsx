@@ -1,14 +1,13 @@
 import React from "react";
+import LoginForm from "../LoginForm/LoginForm";
 
 const LoginPage = () => {
   return (
     <div>
       <h1>Bienvenue chez Dryyss Cheezy Burger</h1>
       <h2>Connectez vous!</h2>
-      <form action="submit">
-        <input type="text" placeholder="Entrer votre prénom" />
-        <button>Connexion</button>
-      </form>
+
+      <LoginForm />
     </div>
   );
 };
