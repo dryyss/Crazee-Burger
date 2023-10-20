@@ -1,14 +1,27 @@
 import React from "react";
 import LoginForm from "../LoginForm/LoginForm";
+import styled, { ThemeProvider } from "styled-components";
+import Logo from "../../Components/Logo/Logo";
+import { theme } from "../../theme";
+
+const LoginPageStyled = styled.div`
+  background: red;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`;
 
 const LoginPage = () => {
   return (
-    <div>
-      <h1>Bienvenue chez Dryyss Cheezy Burger</h1>
-      <h2>Connectez vous!</h2>
+    <ThemeProvider theme={theme}>
+      <LoginPageStyled>
+        <Logo />
 
-      <LoginForm />
-    </div>
+        <LoginForm />
+      </LoginPageStyled>
+    </ThemeProvider>
   );
 };
 
