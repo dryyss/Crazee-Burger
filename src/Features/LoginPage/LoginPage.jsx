@@ -13,10 +13,10 @@ const LoginPageStyled = styled.div`
 
   ::before {
     content: "avant";
-    background: url("/assets/burger-background.jpg");
+    background: url("./assets/burger-background.jpg");
     background-size: cover;
     background-position: center;
-    background-blend-mode: darken;
+    blend-mode: darken;
     z-index: -1;
     position: absolute;
     top: 0;
